@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F449F11-08CA-AA62-994D-3A1F5D94BACA" containerWithKeyObject="4927BC42-273A-5445-98CF-F6ED26D70D01" localFKIndex="F888DF09-6B31-8A57-C7FF-C3E65AFC4A8B" name="ENTR_ESTOQUE_DOC_ENTR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>ABEB7D7A-39F2-32A2-75A5-A5483B1735E3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<referredTableLongName>DOC_ENTR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3C56CB5D-325E-87A6-2F56-DB17ECFF2243</referredTableID>
+<keyObject>70DDAA0B-73DD-DA75-B7B2-D75AABEAA074</keyObject>
+<referredKeyID>70DDAA0B-73DD-DA75-B7B2-D75AABEAA074</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idDocEntr,FORNECEDR_idFornecedr</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

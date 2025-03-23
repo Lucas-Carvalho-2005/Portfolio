@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="425B1A2A-3578-A6A7-7831-BAC437F88F55" name="PED_COMPRA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>C9D384B0-1C61-6D1D-3505-65D846B90CBA</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPedComp" id="6DCEDF35-5EDB-8420-05D2-C47F432CD30F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>2512740B-34BC-759E-39CB-6864DA9C228E</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="6B35D17E-FD84-3B9B-4F16-276C6DBAEDF3">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>897556DF-C005-35D8-CCA5-652C8FF10A37</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORNECEDR_idFornecedr" id="B9076A5B-7B42-4200-96E6-B0D514B7EDD9">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>E5225C1D-1D09-D374-4F21-6EDE83E7DCB9</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD0926D2-F4D9-380D-E2FD-D7CC9F454BED" referredColumn="896D630A-5EBB-B366-613C-9388757DAD32"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8548EDC4-22F6-9EDF-D4A6-B261F8B85624" name="PED_COMPRA_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>A505348B-7C36-BF0F-E956-D0B9854DCA62</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DCEDF35-5EDB-8420-05D2-C47F432CD30F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4111CA72-7D54-C5C5-154E-68ED3EF32793" name="PED_COMPRA_FORNECEDR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>0E58D509-7462-BED9-0B44-0BE4E332F091</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9076A5B-7B42-4200-96E6-B0D514B7EDD9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

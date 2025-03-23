@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F6C02CC1-0C69-607D-6EF0-08D687FF2233" name="ITEM_DOC_ENTR">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:42:47 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idItemDocEnt" id="689F2890-DE9B-32F4-D585-08261E48C2AD">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:42:56 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idDocEntr" id="C67273C8-B7B0-FE74-99A4-23904876E46A">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:51:55 UTC</createdTime>
+<generatorID>5163C765-2E6B-7F3E-8686-412D354B0D75</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>279E7D84-F14D-134D-E602-0CD6D6851058</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProduto" id="9BAD4B5C-BDB4-BBFC-8912-E588AC66E14E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:00:04 UTC</createdTime>
+<generatorID>975425C1-9F26-E508-5C5E-1E40335E815B</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>282A2551-D92D-4A31-E062-2A054E5F6A0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idFornecedr" id="E4E70ABD-BFDD-FDD9-2D91-C33C5B1EADAD">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:15:34 UTC</createdTime>
+<generatorID>5163C765-2E6B-7F3E-8686-412D354B0D75</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>F79163B6-5C64-A27C-8D3F-6606B2D417BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idEntradaEst" id="E9175AA6-1719-74B9-0374-D9FF76B2775B">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:13:49 UTC</createdTime>
+<generatorID>60E41AC8-3D15-3E8B-CE88-576D7D272E35</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>91D511A7-08B5-BDD6-64D2-C22A3E85B9F1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="95B9B789-0D9D-BAF5-187B-206EB4FBE9CE" name="ITEM_DOCUMENTO_ENTRADA PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:43:03 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>689F2890-DE9B-32F4-D585-08261E48C2AD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

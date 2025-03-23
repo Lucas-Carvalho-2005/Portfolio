@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Possui" directorySegmentName="seg_0" id="2BCEF21A-BA20-04B9-C31D-D38F129785A2">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:37:02 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>27AFCCE0-5B09-4E9D-180C-612A16E6398F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E40843D-AD8D-FC6A-138D-BB6233B01559</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CC84082-BCEC-A759-52BB-8117EE02078B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C56CB5D-325E-87A6-2F56-DB17ECFF2243" name="DOC_ENTR">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>5D5D7211-5257-6C1A-9E94-E78D757C35DB</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idDocEntr" id="5D5F864C-F3D1-50B1-AD4D-17F9189FC90E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>279E7D84-F14D-134D-E602-0CD6D6851058</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data" id="8E2F5358-6FA6-18CF-12C1-3B3A597C96C4">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>CEC58226-71D2-5046-D5A1-099D7ECF3CF2</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FORNECEDR_idFornecedr" id="10FA7B25-6EB0-0F61-A738-3056C9C8A9B0">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>F79163B6-5C64-A27C-8D3F-6606B2D417BE</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8FE7EB0A-A189-7061-1306-C668BD1296CF" referredColumn="896D630A-5EBB-B366-613C-9388757DAD32"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="70DDAA0B-73DD-DA75-B7B2-D75AABEAA074" name="DOC_ENTR_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>F31D5095-0119-43A8-7526-DBFDBEB05D18</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D5F864C-F3D1-50B1-AD4D-17F9189FC90E"/>
+<colUsage columnID="10FA7B25-6EB0-0F61-A738-3056C9C8A9B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B788FFD-9F74-DAE3-1FAF-247D59C50221" name="DOC_ENTR_FORNECEDR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>CBCCFA0A-5378-7DFD-2637-8764515902AA</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10FA7B25-6EB0-0F61-A738-3056C9C8A9B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

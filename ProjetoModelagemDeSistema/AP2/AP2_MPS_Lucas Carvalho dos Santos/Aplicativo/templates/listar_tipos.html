@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tipos de Produto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="flash flash-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+
+    <div class="list-container">
+        <h1>Tipos de Produto</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for idTipoProduto, nome in tipos %}
+                <tr>
+                    <td>{{ idTipoProduto }}</td>
+                    <td>{{ nome }}</td>
+                    <td>
+                        <a href="{{ url_for('excluir_tipo', idTipoProduto=idTipoProduto) }}" class="btn-danger">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('menu') }}" class="btn">Voltar ao Menu</a>
+    </div>
+</body>
+</html>
+
+<script>
+    // Remove automaticamente mensagens flash após 5 segundos
+    setTimeout(() => {
+        const flashes = document.querySelectorAll('.flash');
+        flashes.forEach(flash => flash.remove());
+    }, 3000);
+</script>

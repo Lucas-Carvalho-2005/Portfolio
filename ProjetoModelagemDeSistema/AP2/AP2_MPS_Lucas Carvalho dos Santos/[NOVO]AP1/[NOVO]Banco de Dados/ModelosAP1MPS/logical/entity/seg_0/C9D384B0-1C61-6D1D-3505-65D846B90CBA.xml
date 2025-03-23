@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C9D384B0-1C61-6D1D-3505-65D846B90CBA" name="PED_COMPRA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:41:45 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idPedComp" id="2512740B-34BC-759E-39CB-6864DA9C228E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:41:52 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data" id="897556DF-C005-35D8-CCA5-652C8FF10A37">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:42:05 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idFornecedr" id="E5225C1D-1D09-D374-4F21-6EDE83E7DCB9">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:18:01 UTC</createdTime>
+<generatorID>0E58D509-7462-BED9-0B44-0BE4E332F091</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>4151C324-0683-75C7-5169-85BE84C81F6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A505348B-7C36-BF0F-E956-D0B9854DCA62" name="PEDIDO_COMPRA PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:42:04 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2512740B-34BC-759E-39CB-6864DA9C228E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

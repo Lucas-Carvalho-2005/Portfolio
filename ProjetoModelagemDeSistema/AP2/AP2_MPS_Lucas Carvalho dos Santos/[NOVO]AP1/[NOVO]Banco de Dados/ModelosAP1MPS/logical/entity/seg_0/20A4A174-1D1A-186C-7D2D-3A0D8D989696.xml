@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20A4A174-1D1A-186C-7D2D-3A0D8D989696" name="TIPO_PRODUTO">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:04:55 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTipoProduto" id="FEFE19DE-F152-0B28-6053-B807CC66687C">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:05:13 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="0C47F494-1AFC-04CD-DCEF-550E69647504">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:05:33 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F90AE1C9-B763-6967-398C-4D883EEBF14C" name="TIPO_PRODUTO PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:05:32 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FEFE19DE-F152-0B28-6053-B807CC66687C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

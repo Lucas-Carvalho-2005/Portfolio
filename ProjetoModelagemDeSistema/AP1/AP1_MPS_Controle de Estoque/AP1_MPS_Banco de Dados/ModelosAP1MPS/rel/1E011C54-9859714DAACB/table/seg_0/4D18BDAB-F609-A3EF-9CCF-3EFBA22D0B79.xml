@@ -1,0 +1,178 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D18BDAB-F609-A3EF-9CCF-3EFBA22D0B79" name="Adquire">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PRODUTO_id_Produto" id="B4F1B8C5-1EC0-BADC-63D4-B8075375CFF7">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E12D18B5-09EA-F2AF-221B-AC4ED6E0FC9E" referredColumn="831276AC-02CE-47D9-4D9B-8A2EF3A63B6B"/>
+</associations>
+</Column>
+<Column name="CLIENTE_id_Cliente" id="BB472B3C-92B9-EE1C-E32B-6A995C5565D0">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7AE270C8-18D7-4200-19AF-C8C645AA27F0" referredColumn="0BF2DF01-C76B-0DCF-92E2-81741ED9400E"/>
+</associations>
+</Column>
+<Column name="id_SaídaProduto" id="02AC1579-2963-F168-F2F8-8DEFE8D3EB67">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>82D99889-0EB5-FF54-C62F-E30046F7DE2F</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="tipoSaída" id="5851A165-EEB2-3363-5B49-906B920BAB2C">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>1CFEBEA2-05B6-BBE1-4363-6DD91EBC7502</generatorID>
+<notes><![CDATA[Tipo de saída do produto:
+- Venda
+- Consignação
+- Doação
+- Amostra
+- Outros]]></notes>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="preçoUnitário" id="3E95724A-F597-0B83-DF58-D1F83843EB0F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>BB652342-14F2-C99A-0C46-BD005D9AB379</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="quantidade" id="1B282FA7-ED99-1377-9E9A-69F734E5E1BE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>ACB81A90-8B5E-CE69-4A26-9950979139D4</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="valorTotal" id="2614809C-CE7E-3011-DC87-EF4C6EFAEDFB">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>A18C346B-4311-7494-42AC-D8F038E9A22F</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="data" id="C3786BA5-390D-F706-366F-0304E025B398">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>68AEB9AD-F233-D393-3D98-C597ED57E88F</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="documento" id="D9D7955E-0A04-F345-C823-1DCC95C0E2F9">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-29 01:48:21 UTC</createdTime>
+<generatorID>E59E981F-0713-698C-9080-F9264A4C9670</generatorID>
+<notes><![CDATA[Esse atributo armazena o caminho do documento de saída, seja em um diretório local ou em um serviço de armazenamento externo.]]></notes>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E800D33-8F80-ECB6-E59A-36CE212AD003" name="Adquire_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4F1B8C5-1EC0-BADC-63D4-B8075375CFF7"/>
+<colUsage columnID="BB472B3C-92B9-EE1C-E32B-6A995C5565D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01610DB0-546D-16B3-58AA-48C0C4B8D574" name="Adquire_PRODUTO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>3DE739CB-CE85-6108-0111-5D33712AF1F3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4F1B8C5-1EC0-BADC-63D4-B8075375CFF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84C80815-A2E5-8A36-4E1A-C7C519E5CB0A" name="Adquire_CLIENTE_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>3DE739CB-CE85-6108-0111-5D33712AF1F3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB472B3C-92B9-EE1C-E32B-6A995C5565D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4927BC42-273A-5445-98CF-F6ED26D70D01" name="ENTR_ESTOQUE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>7DA57791-4F57-D06C-4BB4-26240D453805</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idEntradaEst" id="879137F5-5F66-572C-5A1F-E158F6C10D08">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>91D511A7-08B5-BDD6-64D2-C22A3E85B9F1</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUTO_idProduto" id="1BAB1F0A-EA48-73F9-E3B8-38ADB12BE948">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>0311ED89-1A3C-F01A-A5AD-2FBA00BF1E70</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D6271E6-5F85-2390-31EC-9F3B512E441B" referredColumn="DA6E89EF-B2F1-BDC8-BE1D-41AD027C1492"/>
+</associations>
+</Column>
+<Column name="DOC_ENTR_idDocEntr" id="C688E2C8-CDF0-E7A9-5B4D-2E0FB38F1CB5">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>3B4823EF-4AC0-1EE9-FAD7-02962888C887</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F449F11-08CA-AA62-994D-3A1F5D94BACA" referredColumn="5D5F864C-F3D1-50B1-AD4D-17F9189FC90E"/>
+</associations>
+</Column>
+<Column name="DOC_ENTR_FORNECEDR_idFornecedr" id="1B7D5BA9-B0E1-5B66-8CFC-7CF51FA1FF99">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>3166D048-D81C-4B9D-757D-23D7F70A4446</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F449F11-08CA-AA62-994D-3A1F5D94BACA" referredColumn="10FA7B25-6EB0-0F61-A738-3056C9C8A9B0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="878583B6-728D-C69D-595F-1C197508E65C" name="ENTR_ESTOQUE_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>571C0968-3766-B660-20C9-599C82112645</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="879137F5-5F66-572C-5A1F-E158F6C10D08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1028A66B-D1AA-571A-976C-86B8C61E24C9" name="ENTR_ESTOQUE_PRODUTO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>E704668E-5DE8-A143-6F77-54DCB13A0597</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1BAB1F0A-EA48-73F9-E3B8-38ADB12BE948"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F888DF09-6B31-8A57-C7FF-C3E65AFC4A8B" name="ENTR_ESTOQUE_DOC_ENTR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>ABEB7D7A-39F2-32A2-75A5-A5483B1735E3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C688E2C8-CDF0-E7A9-5B4D-2E0FB38F1CB5"/>
+<colUsage columnID="1B7D5BA9-B0E1-5B66-8CFC-7CF51FA1FF99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

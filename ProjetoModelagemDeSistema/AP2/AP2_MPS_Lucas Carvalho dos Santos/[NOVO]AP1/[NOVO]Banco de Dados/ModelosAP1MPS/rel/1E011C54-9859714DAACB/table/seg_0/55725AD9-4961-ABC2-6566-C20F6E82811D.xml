@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="55725AD9-4961-ABC2-6566-C20F6E82811D" name="ITEM_PED_COMPRA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>0A4A4FDC-D340-EAB1-F285-6C11E519ACB4</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idItemPedComp" id="3293B357-398C-C77F-1C5C-2FF73A27097F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>0D04D10D-F5C1-F2A8-A018-80483A6AB36E</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="F6267CD7-56EC-EF8C-7A00-BF08C3DC7A7A">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>F99A77CC-A94D-F215-1178-AD4B81D93248</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precoUnitario" id="535B8FFD-E6B9-3FC1-AF53-690B80003016">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>39BD4677-2777-7E81-1490-EEC65D1AFD40</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PED_COMPRA_idPedComp" id="FCEA61EA-8702-BEF5-7860-008F8467057A">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>497B1726-794D-8275-C432-69363C24A16E</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5259B03-A06D-45F2-178A-E6FFDC3CAA8C" referredColumn="6DCEDF35-5EDB-8420-05D2-C47F432CD30F"/>
+</associations>
+</Column>
+<Column name="PRODUTO_idProduto" id="2BC76D40-826C-0503-6FA0-84212BD27D44">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>4269630E-5E47-4243-1B78-B52EF9FE6F6F</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A684CEDA-5999-B60F-D5AC-E3EA981E1703" referredColumn="DA6E89EF-B2F1-BDC8-BE1D-41AD027C1492"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0952A38-7D21-E8EF-5892-56CA74231E75" name="ITEM_PED_COMPRA_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>4F8B94AD-0C1E-B120-9844-963A1A60A7CB</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3293B357-398C-C77F-1C5C-2FF73A27097F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1FBDD4A6-6BE0-4156-B35C-423EC7E54952" name="ITEM_PED_COMPRA_PRODUTO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>49E897C2-8752-EE33-2F6E-90670DB14F88</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BC76D40-826C-0503-6FA0-84212BD27D44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C5272B0-7A48-F7C6-1D21-FAB129A9E5B6" name="ITEM_PED_COMPRA_PED_COMPRA_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>33707409-3DEC-5242-9F44-F2A937C88151</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FCEA61EA-8702-BEF5-7860-008F8467057A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Está contido" directorySegmentName="seg_0" id="5163C765-2E6B-7F3E-8686-412D354B0D75">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:51:55 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>F31D5095-0119-43A8-7526-DBFDBEB05D18</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5D5D7211-5257-6C1A-9E94-E78D757C35DB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F6C02CC1-0C69-607D-6EF0-08D687FF2233</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

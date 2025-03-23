@@ -1,0 +1,22 @@
+*Main> x =  5 + 10
+*Main> :sprint x
+x = _
+*Main> x
+15
+*Main> :sprint x
+x = 15
+
+*Main> x = 3 + 7
+*Main> :sprint x
+x = _
+*Main> y = x * 2
+*Main> :sprint x
+x = _
+*Main> :sprint y
+y = _
+*Main> y
+20
+*Main> :sprint x
+x = 10
+*Main> :sprint y
+y = 20

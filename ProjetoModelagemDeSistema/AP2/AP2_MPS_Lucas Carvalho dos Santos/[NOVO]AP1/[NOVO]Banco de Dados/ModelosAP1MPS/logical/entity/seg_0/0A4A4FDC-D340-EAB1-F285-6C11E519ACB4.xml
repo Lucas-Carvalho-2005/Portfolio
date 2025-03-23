@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0A4A4FDC-D340-EAB1-F285-6C11E519ACB4" name="ITEM_PED_COMPRA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:40:49 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idItemPedComp" id="0D04D10D-F5C1-F2A8-A018-80483A6AB36E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:40:56 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade" id="F99A77CC-A94D-F215-1178-AD4B81D93248">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:41:07 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precoUnitario" id="39BD4677-2777-7E81-1490-EEC65D1AFD40">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:41:19 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPedComp" id="497B1726-794D-8275-C432-69363C24A16E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:17:14 UTC</createdTime>
+<generatorID>33707409-3DEC-5242-9F44-F2A937C88151</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>2512740B-34BC-759E-39CB-6864DA9C228E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProduto" id="4269630E-5E47-4243-1B78-B52EF9FE6F6F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:19:32 UTC</createdTime>
+<generatorID>49E897C2-8752-EE33-2F6E-90670DB14F88</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>282A2551-D92D-4A31-E062-2A054E5F6A0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4F8B94AD-0C1E-B120-9844-963A1A60A7CB" name="ITEM_PEDIDO_COMPRA PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:41:06 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0D04D10D-F5C1-F2A8-A018-80483A6AB36E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

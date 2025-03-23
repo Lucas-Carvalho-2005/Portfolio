@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4B2801D-D697-22B4-7D74-7C9ADC2209D9" name="TIPO_SAIDA">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:31:42 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTipoSaída" id="FA5D9D98-981C-F23D-F8B3-360B16DB866E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:31:47 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="2B10BEFF-8D6D-D970-BCDC-479B4FADC697">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:31:59 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPedido" id="B4BC8729-A915-949E-38FF-A9D2924251B4">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:37:33 UTC</createdTime>
+<generatorID>78F3317B-C559-8C59-5088-FA1C8A174830</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>4541807F-C85E-ABAB-658B-3EBBE6D63A29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3485B72C-9598-6BDD-166D-53AF6C528CD9" name="TIPO_SAÍDA PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:31:52 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FA5D9D98-981C-F23D-F8B3-360B16DB866E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

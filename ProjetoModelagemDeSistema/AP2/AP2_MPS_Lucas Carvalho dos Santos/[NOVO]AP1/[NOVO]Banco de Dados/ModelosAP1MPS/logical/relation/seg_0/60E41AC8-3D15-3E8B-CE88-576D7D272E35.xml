@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Está relacionadov3" directorySegmentName="seg_0" id="60E41AC8-3D15-3E8B-CE88-576D7D272E35">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:13:49 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>571C0968-3766-B660-20C9-599C82112645</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7DA57791-4F57-D06C-4BB4-26240D453805</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>F6C02CC1-0C69-607D-6EF0-08D687FF2233</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

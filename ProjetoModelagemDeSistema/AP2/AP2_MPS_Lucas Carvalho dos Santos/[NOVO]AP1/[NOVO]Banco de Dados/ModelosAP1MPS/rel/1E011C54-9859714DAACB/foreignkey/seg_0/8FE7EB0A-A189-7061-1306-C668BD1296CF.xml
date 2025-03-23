@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8FE7EB0A-A189-7061-1306-C668BD1296CF" containerWithKeyObject="3C56CB5D-325E-87A6-2F56-DB17ECFF2243" localFKIndex="5B788FFD-9F74-DAE3-1FAF-247D59C50221" name="DOC_ENTR_FORNECEDR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>CBCCFA0A-5378-7DFD-2637-8764515902AA</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<referredTableLongName>FORNECEDR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7720BA09-9DF7-E01B-262C-5B5CF0ADDF43</referredTableID>
+<keyObject>AEDB399A-2D95-AB29-6107-448C563290C8</keyObject>
+<referredKeyID>AEDB399A-2D95-AB29-6107-448C563290C8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idFornecedr</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

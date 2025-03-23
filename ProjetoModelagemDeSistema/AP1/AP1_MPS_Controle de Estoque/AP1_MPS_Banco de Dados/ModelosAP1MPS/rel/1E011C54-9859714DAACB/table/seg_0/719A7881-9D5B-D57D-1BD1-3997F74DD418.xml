@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="719A7881-9D5B-D57D-1BD1-3997F74DD418" name="PRODUTO">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>F7C773F7-0C99-353E-30E8-8C659287C4FB</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Produto" id="831276AC-02CE-47D9-4D9B-8A2EF3A63B6B">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>282A2551-D92D-4A31-E062-2A054E5F6A0A</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo" id="C3E1A89B-FB8E-624E-0DF0-92A2165D15DE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>48143E14-1D7E-D4A5-908B-91209D41F7BD</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="87351FED-3FAE-DBCE-10B1-211A162F8187">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>94A17919-AAAD-AF78-AA3E-5A198B50EC36</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="quantidade" id="F4295CFA-8BDF-7447-9905-3B1A336E08C6">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>EA660957-8E2F-8A2A-A740-829B12C748B7</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F52E9B87-9808-94DE-1A19-5D8B64983243" name="PRODUTO_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>7581871F-F110-A8A3-6122-91F580D50707</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="831276AC-02CE-47D9-4D9B-8A2EF3A63B6B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CC84082-BCEC-A759-52BB-8117EE02078B" name="ITEM_PEDIDO">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:14:06 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idItemPedido" id="A3F728DA-08EE-D082-CB7C-E2DCC2B92CEC">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:14:14 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantidade" id="9B6797E2-7D8A-B54F-09B1-BE00F98C593D">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:30:17 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="precoUnitario" id="BB48AA52-8476-F7AC-A052-F52EE9A3BFAE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:30:29 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProduto" id="AFCB61F8-441D-B3BA-9282-0DCB31B5B357">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:35:19 UTC</createdTime>
+<generatorID>92BDC358-AF71-073D-BA40-5322B830275E</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>282A2551-D92D-4A31-E062-2A054E5F6A0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idPedido" id="A6D3B0AC-F0BE-7DE6-EEDF-2A2C93E50C77">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:37:02 UTC</createdTime>
+<generatorID>2BCEF21A-BA20-04B9-C31D-D38F129785A2</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>4541807F-C85E-ABAB-658B-3EBBE6D63A29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66C2A4D6-F63F-56AE-4B70-809D4E442F8B" name="ITEM_PEDIDO PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:27:42 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3F728DA-08EE-D082-CB7C-E2DCC2B92CEC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

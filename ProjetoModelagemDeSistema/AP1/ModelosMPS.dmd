@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="ModelosMPS" id="B324CF21-86BC-9F67-686D-0D7777A2FC84" version="3.5">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 15:52:32 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B324CF21-86BC-9F67-686D-0D7777A2FC84</designId>
+</OSDM_Design>

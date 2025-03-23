@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Menu Principal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo-time.png') }}" alt="Logotipo do Time">
+        </div>
+        <h1>Menu Principal</h1>
+        <a href="{{ url_for('cadastrar_tipo') }}" class="btn">
+            <img src="{{ url_for('static', filename='description.png') }}" alt="Ícone de Tipo de Produto" class="icon">
+            Cadastrar Tipo de Produto
+        </a>
+        <a href="{{ url_for('cadastrar_produto') }}" class="btn">
+            <img src="{{ url_for('static', filename='product.png') }}" alt="Ícone de Produto" class="icon">
+            Cadastrar Produto
+        </a>
+        <a href="{{ url_for('listar_produtos') }}" class="btn">
+            <img src="{{ url_for('static', filename='product.png') }}" alt="Ícone de Listar Produtos" class="icon">
+            Listar Produtos
+        </a>
+        <a href="{{ url_for('listar_tipos') }}" class="btn">
+            <img src="{{ url_for('static', filename='description.png') }}" alt="Ícone de Listar Tipos" class="icon">
+            Listar Tipos
+        </a>
+    </div>
+</body>
+</html>

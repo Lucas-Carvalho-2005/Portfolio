@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="É vinculadov2" directorySegmentName="seg_0" id="78F3317B-C559-8C59-5088-FA1C8A174830">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:37:33 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>27AFCCE0-5B09-4E9D-180C-612A16E6398F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2E40843D-AD8D-FC6A-138D-BB6233B01559</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F4B2801D-D697-22B4-7D74-7C9ADC2209D9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

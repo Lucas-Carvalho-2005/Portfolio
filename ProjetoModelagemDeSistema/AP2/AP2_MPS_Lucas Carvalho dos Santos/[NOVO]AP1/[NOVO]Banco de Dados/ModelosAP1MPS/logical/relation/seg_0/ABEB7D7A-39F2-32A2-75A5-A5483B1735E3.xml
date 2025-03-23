@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Se referemv2" directorySegmentName="seg_0" id="ABEB7D7A-39F2-32A2-75A5-A5483B1735E3">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:08:15 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>F31D5095-0119-43A8-7526-DBFDBEB05D18</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5D5D7211-5257-6C1A-9E94-E78D757C35DB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7DA57791-4F57-D06C-4BB4-26240D453805</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

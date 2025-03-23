@@ -1,0 +1,5 @@
+Telas de Protótipo:
+https://www.figma.com/design/cn9FwYwlE85nESjBzcCULF/Prot%C3%B3tipo-de-Telas?node-id=2-53&t=E8kXbozJWtCJGQzd-1
+
+IDEF0 para melhor visualização:
+https://lucid.app/lucidchart/6b353e15-80b1-4987-8c13-7df0f168e661/edit?viewport_loc=-9964%2C1968%2C4440%2C1868%2C0_0&invitationId=inv_1a2013a2-b4bf-4519-b831-40c5a406a0f2

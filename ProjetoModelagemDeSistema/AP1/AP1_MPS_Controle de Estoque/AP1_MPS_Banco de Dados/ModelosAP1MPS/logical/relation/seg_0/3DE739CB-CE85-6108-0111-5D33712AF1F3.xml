@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Adquire" directorySegmentName="seg_0" id="3DE739CB-CE85-6108-0111-5D33712AF1F3">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:29:55 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>7581871F-F110-A8A3-6122-91F580D50707</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F7C773F7-0C99-353E-30E8-8C659287C4FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>849FBD82-B597-D55D-1D58-DFFAEA596C1D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="id_SaídaProduto" id="82D99889-0EB5-FF54-C62F-E30046F7DE2F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:30:02 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="tipoSaída" id="1CFEBEA2-05B6-BBE1-4363-6DD91EBC7502">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:30:17 UTC</createdTime>
+<notes><![CDATA[Tipo de saída do produto:
+- Venda
+- Consignação
+- Doação
+- Amostra
+- Outros]]></notes>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</attribute>
+<attribute name="preçoUnitário" id="BB652342-14F2-C99A-0C46-BD005D9AB379">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:30:29 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</attribute>
+<attribute name="quantidade" id="ACB81A90-8B5E-CE69-4A26-9950979139D4">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:30:43 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="valorTotal" id="A18C346B-4311-7494-42AC-D8F038E9A22F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:30:52 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</attribute>
+<attribute name="data" id="68AEB9AD-F233-D393-3D98-C597ED57E88F">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:31:22 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+<attribute name="documento" id="E59E981F-0713-698C-9080-F9264A4C9670">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-29 01:47:41 UTC</createdTime>
+<notes><![CDATA[Esse atributo armazena o caminho do documento de saída, seja em um diretório local ou em um serviço de armazenamento externo.]]></notes>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

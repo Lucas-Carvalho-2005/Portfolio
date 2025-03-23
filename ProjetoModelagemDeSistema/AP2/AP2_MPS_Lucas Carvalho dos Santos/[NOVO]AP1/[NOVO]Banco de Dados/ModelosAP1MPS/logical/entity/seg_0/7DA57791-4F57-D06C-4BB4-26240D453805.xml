@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7DA57791-4F57-D06C-4BB4-26240D453805" name="ENTR_ESTOQUE">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:39:56 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idEntradaEst" id="91D511A7-08B5-BDD6-64D2-C22A3E85B9F1">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:40:03 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProduto" id="0311ED89-1A3C-F01A-A5AD-2FBA00BF1E70">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:47:09 UTC</createdTime>
+<generatorID>E704668E-5DE8-A143-6F77-54DCB13A0597</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>282A2551-D92D-4A31-E062-2A054E5F6A0A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idDocEntr" id="3B4823EF-4AC0-1EE9-FAD7-02962888C887">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:08:15 UTC</createdTime>
+<generatorID>ABEB7D7A-39F2-32A2-75A5-A5483B1735E3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>279E7D84-F14D-134D-E602-0CD6D6851058</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idFornecedr" id="3166D048-D81C-4B9D-757D-23D7F70A4446">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 17:15:34 UTC</createdTime>
+<generatorID>ABEB7D7A-39F2-32A2-75A5-A5483B1735E3</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<referedAttribute>F79163B6-5C64-A27C-8D3F-6606B2D417BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="571C0968-3766-B660-20C9-599C82112645" name="ESTOQUE PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:40:07 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>91D511A7-08B5-BDD6-64D2-C22A3E85B9F1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

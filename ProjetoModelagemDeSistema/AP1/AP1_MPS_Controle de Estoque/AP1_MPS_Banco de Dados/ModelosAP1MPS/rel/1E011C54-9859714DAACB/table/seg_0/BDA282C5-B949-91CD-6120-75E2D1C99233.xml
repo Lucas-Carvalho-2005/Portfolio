@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDA282C5-B949-91CD-6120-75E2D1C99233" name="Fornece">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FORNECEDOR_id_Fornecedor" id="6D477DF8-7847-FD55-4886-E6B1EF4FFE77">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D14CC2F-690D-A069-D38A-3A65BE675AC8" referredColumn="E6E726C5-74D9-7B7F-8AE2-2EA6F193220B"/>
+</associations>
+</Column>
+<Column name="PRODUTO_id_Produto" id="99192334-DB10-50B0-B2CF-BDCC190E9A75">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6CAFC76-A8F9-49C5-74EE-0C766AAA9D36" referredColumn="831276AC-02CE-47D9-4D9B-8A2EF3A63B6B"/>
+</associations>
+</Column>
+<Column name="id_EntradaProduto" id="8236FDA2-3732-67E2-197C-2656D103E5EF">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>9AAB1954-BFC5-D23C-12C3-E9033C76BC42</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="preçoUnitário" id="535714E1-6DFD-8DBB-AA94-7979895CD4A5">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>37D0CC71-AB1A-765E-0CEF-264C5B306C32</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="quantidade" id="178C44A1-731F-D1BB-5122-B3CE4608F0AF">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>FB7D291D-646D-8EB2-AF37-6911529BB3BB</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="valorTotal" id="AE11C79A-4FC7-138D-B619-EE4D2F34D096">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>823290A0-F16C-5F96-7764-753A7B17901A</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="data" id="FF93217D-596F-3F82-420E-7454CACC4635">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>4545CE4C-2153-B184-4917-5B713FFED932</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+<Column name="documento" id="4E8C0D74-8C44-CAAB-FE58-969F4E866176">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-29 01:48:21 UTC</createdTime>
+<generatorID>D1D00371-EB2E-D4F4-C8E4-6C12FC0B4722</generatorID>
+<notes><![CDATA[Esse atributo armazena o caminho do documento de entrada, seja em um diretório local ou em um serviço de armazenamento externo.]]></notes>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4A42A1D9-E417-2871-3510-810AD5B3869B" name="Fornece_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D477DF8-7847-FD55-4886-E6B1EF4FFE77"/>
+<colUsage columnID="99192334-DB10-50B0-B2CF-BDCC190E9A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72A9B095-8C1E-45B8-84AF-CBA30695948E" name="Fornece_FORNECEDOR_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>01CDE288-5974-1299-5A89-0E36F99AAECE</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D477DF8-7847-FD55-4886-E6B1EF4FFE77"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6273379-80B3-8403-BDDC-ECE17899D62E" name="Fornece_PRODUTO_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>01CDE288-5974-1299-5A89-0E36F99AAECE</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99192334-DB10-50B0-B2CF-BDCC190E9A75"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

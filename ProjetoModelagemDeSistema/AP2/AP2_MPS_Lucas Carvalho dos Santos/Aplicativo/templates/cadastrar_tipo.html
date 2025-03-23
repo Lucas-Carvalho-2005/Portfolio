@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Tipo de Produto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro de Tipo de Produto</h1>
+        <form method="POST">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required>
+            <a href="{{ url_for('menu') }}" class="btn">Voltar ao Menu</a>
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+  document.querySelector('form').addEventListener('submit', async function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+
+      const formData = new FormData(this);
+      const response = await fetch('', { // Envia para a mesma rota
+          method: 'POST',
+          body: formData
+      });
+
+      const result = await response.json(); // Processa a resposta JSON
+      if (response.ok) {
+          displayFeedback(result.message, 'success');
+          setTimeout(() => {
+              window.location.href = "{{ url_for('menu') }}"; // Redireciona após sucesso
+          }, 2000); // Redireciona após 2 segundos
+      } else {
+          displayFeedback(result.message || 'Erro ao cadastrar', 'danger');
+      }
+  });
+
+  function displayFeedback(message, type) {
+      const feedback = document.createElement('div');
+      feedback.className = `flash flash-${type}`;
+      feedback.textContent = message;
+
+      document.body.prepend(feedback); // Adiciona no topo da página
+
+      setTimeout(() => feedback.remove(), 3000); // Remove após 5 segundos
+  }
+</script>

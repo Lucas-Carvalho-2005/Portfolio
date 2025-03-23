@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Produtos Cadastrados</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="flash flash-{{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+{% endwith %}
+    <div class="list-container">
+        <h1>Produtos Cadastrados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Tipo</th>
+                    <th>Data de Cadastro</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for idProduto, nome, descricao, dataCadastro, tipo_nome in produtos %}
+                <tr>
+                    <td>{{ idProduto }}</td>
+                    <td>{{ nome }}</td>
+                    <td>{{ descricao }}</td>
+                    <td>{{ tipo_nome }}</td>
+                    <td>{{ dataCadastro }}</td>
+                    <td>
+                        <a href="{{ url_for('excluir_produto', idProduto=idProduto) }}" class="btn-danger">Excluir</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <a href="{{ url_for('menu') }}" class="btn">Voltar ao Menu</a>
+    </div>
+
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content">
+            <h3 id="confirm-message"></h3>
+            <div class="modal-buttons">
+                <button id="cancel-btn" class="btn">Cancelar</button>
+                <button id="confirm-btn" class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<script>
+    // Remove automaticamente mensagens flash após 3 segundos
+    setTimeout(() => {
+        const flashes = document.querySelectorAll('.flash');
+        flashes.forEach(flash => flash.remove());
+    }, 3000);
+</script>
+
+<script>
+    // Modal de confirmação
+    const modal = document.getElementById('confirm-modal');
+    const confirmMessage = document.getElementById('confirm-message');
+    const cancelBtn = document.getElementById('cancel-btn');
+    const confirmBtn = document.getElementById('confirm-btn');
+    let deleteUrl = ''; // URL do item a ser excluído
+
+    // Abrir modal ao clicar em "Excluir"
+    function openModal(message, url) {
+        confirmMessage.textContent = message;
+        deleteUrl = url;
+        modal.style.display = 'flex';
+    }
+
+    // Fechar modal ao clicar em "Cancelar"
+    cancelBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+        deleteUrl = '';
+    });
+
+    // Confirmar exclusão
+    confirmBtn.addEventListener('click', async () => {
+        if (deleteUrl) {
+            const response = await fetch(deleteUrl, { method: 'DELETE' });
+            const result = await response.json();
+            if (result.status === 'success') {
+                window.location.reload(); // Recarregar página após exclusão
+            } else {
+                alert(result.message || 'Erro ao excluir.');
+            }
+        }
+        modal.style.display = 'none';
+    });
+
+    // Adicionar evento aos links "Excluir"
+    document.querySelectorAll('.btn-danger').forEach(button => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
+            const url = button.getAttribute('href');
+            const isProduct = button.closest('table').querySelector('th').textContent.includes('Produto');
+            openModal(
+                isProduct ? 'Deseja excluir o produto?' : 'Deseja excluir o tipo de produto?',
+                url
+            );
+        });
+    });
+</script>

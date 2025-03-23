@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Está emv2" directorySegmentName="seg_0" id="92BDC358-AF71-073D-BA40-5322B830275E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 16:35:19 UTC</createdTime>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<engineerTo>
+<item key="1E011C54-AE02-6291-493B-9859714DAACB" value="true"/>
+</engineerTo>
+<sourcePk>7581871F-F110-A8A3-6122-91F580D50707</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F7C773F7-0C99-353E-30E8-8C659287C4FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CC84082-BCEC-A759-52BB-8117EE02078B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

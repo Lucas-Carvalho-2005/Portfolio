@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Produto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastro de Produto</h1>
+        <form method="POST">
+            <label for="idTipoProduto">Tipo de Produto</label>
+            <select name="idTipoProduto" id="idTipoProduto" required>
+                <option value="" disabled selected>Selecione o tipo de produto</option>
+                {% for idTipoProduto, nome in tipos %}
+                <option value="{{ idTipoProduto }}">{{ nome }}</option>
+                {% endfor %}
+            </select>
+            <label for="nome">Nome do Produto</label>
+            <input type="text" name="nome" id="nome" required>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" required></textarea>
+            <a href="{{ url_for('menu') }}" class="btn">Voltar ao Menu</a>
+            <button type="submit" class="btn">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector('form').addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(this);
+        const response = await fetch('', {
+            method: 'POST',
+            body: formData
+        });
+
+        const result = await response.json();
+        if (response.ok) {
+            displayFeedback(result.message, 'success');
+            setTimeout(() => {
+                window.location.href = "{{ url_for('menu') }}"; // Redireciona após sucesso
+            }, 2000); // Redireciona após 2 segundos
+        } else {
+            displayFeedback(result.message || 'Erro ao cadastrar', 'danger');
+        }
+    });
+
+    function displayFeedback(message, type) {
+        const feedback = document.createElement('div');
+        feedback.className = `flash flash-${type}`;
+        feedback.textContent = message;
+
+        document.body.prepend(feedback);
+
+        setTimeout(() => feedback.remove(), 3000);
+    }
+</script>

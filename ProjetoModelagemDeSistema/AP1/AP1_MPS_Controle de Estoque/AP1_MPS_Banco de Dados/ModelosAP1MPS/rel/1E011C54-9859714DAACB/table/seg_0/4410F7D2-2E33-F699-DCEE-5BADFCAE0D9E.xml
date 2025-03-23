@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4410F7D2-2E33-F699-DCEE-5BADFCAE0D9E" name="FORNECEDOR">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>CF778AD3-3AB1-3D8F-0C80-8448CF99A187</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_Fornecedor" id="E6E726C5-74D9-7B7F-8AE2-2EA6F193220B">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>4151C324-0683-75C7-5169-85BE84C81F6E</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razaoSocial" id="810FA76B-89B6-9DFC-88AB-833F5055D1AD">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>BC7B73DB-2454-E4CC-7772-A3D15F13F904</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cnpj" id="0BC21A11-5DB1-21E6-C5F9-AF2203D5188D">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>D88094B0-5BA0-936B-B8D7-C29E5D83A06D</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="B59F1AAA-E34E-8537-F062-C880F13329C2">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>4A62A303-1B71-0484-682D-A24BAFAE3E84</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="49F8755C-E783-F449-8EA3-EBD2B344CC5E">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>D22E2B31-287B-D25E-DFD7-CC9A5D55A215</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2E3309F-3730-7D56-A34E-FE378BBE7F3E" name="FORNECEDOR_PK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-10-28 21:33:01 UTC</createdTime>
+<generatorID>FF81538E-0388-1A23-4F8D-B24326F8519F</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6E726C5-74D9-7B7F-8AE2-2EA6F193220B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

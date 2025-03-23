@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A5259B03-A06D-45F2-178A-E6FFDC3CAA8C" containerWithKeyObject="55725AD9-4961-ABC2-6566-C20F6E82811D" localFKIndex="3C5272B0-7A48-F7C6-1D21-FAB129A9E5B6" name="ITEM_PED_COMPRA_PED_COMPRA_FK">
+<createdBy>lucas</createdBy>
+<createdTime>2024-11-15 20:15:27 UTC</createdTime>
+<generatorID>33707409-3DEC-5242-9F44-F2A937C88151</generatorID>
+<ownerDesignName>ModelosAP1MPS</ownerDesignName>
+<referredTableLongName>PED_COMPRA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>425B1A2A-3578-A6A7-7831-BAC437F88F55</referredTableID>
+<keyObject>8548EDC4-22F6-9EDF-D4A6-B261F8B85624</keyObject>
+<referredKeyID>8548EDC4-22F6-9EDF-D4A6-B261F8B85624</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idPedComp</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
